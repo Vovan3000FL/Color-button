@@ -1,0 +1,32 @@
+<html>
+<head>
+<title>Color-button - free demo</title>
+<script>
+<script language = "javascript">
+arrColor = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "a", "b", "c", "d", "e", "f"];
+function mouseOut() {
+  for (i = 0; i < 13; i++)
+    setTimeout ('document.blinkbutton.button.style.background = "#'+arrColor[15-i]+'0'+arrColor[15-i]+'FFF";', i * 50);
+}
+function mouseOver() {
+  for (i = 0; i < 15; i++)
+    setTimeout ('document.blinkbutton.button.style.background = "#'+arrColor[i]+'0'+arrColor[i]+'F31";', i * 50);
+}
+</script>
+</script>
+</head>
+<body>
+<center><h1>Color-button - a script blinkbutton in your site.</h1><br /><br /><br /><br /><br /><br /><br /><br />
+<form name = "blinkbutton">
+<input type="button" name="button" value=" Hover mouse, please. " onMouseOver='mouseOver()' onMouseOut='mouseOut()' style="background-color: #1400FF">
+</form>
+<br /><br /><br />
+<h3>
+If you want to incert href in your button, write in input type... onClick='href();' and in head script function 
+href() {
+window.location.href("yoursite.com");
+}
+</h3>
+</center>
+</body>
+</html>
